@@ -1,0 +1,142 @@
+% Please keep it to 80 columns, no tabs, no trailing whitespace
+% and no Windows line endings (\r\n)
+
+\documentclass[10pt,oneside,landscape,notitlepage]{report}
+\usepackage[a3paper]{geometry}
+\usepackage{tabularx}
+\usepackage[cm]{fullpage}
+\usepackage{color}
+
+\begin{document}
+\color{white}
+\pagecolor{black}
+\clearpage
+\thispagestyle{empty}
+ \begin{tabularx}{\textwidth}{| L | X | L | L | X | X |}
+   \hline
+
+   Name & Description & Language & License & Links & Comments \\
+   \hline
+   Yi & Text editor written in and using Haskell for configuration & Haskell &
+   GPL & https://github.com/yi-editor/yi & Not usable day-to-day but has a lot
+   of potential. Configs available for vim and emacs users. \\
+   \hline
+   Clementine & Cross-platform (Linux, OSX, Windows) music player picking up
+   where Amarok 1.4 left. All code was rewritten. Uses gstreamer as a backend. &
+   C++ & GPLv3 & http://code.google.com/p/clementine-player/issues/list & There
+   are many issues open and quite a few of them are fairly easy to fix. Attach
+   patches on relevant issues. Uses Qt4 for front-end. Ask in DPTs for help on
+   picking issues.\\
+   \hline
+   Haddock & Haskell's documentation engine & Haskell & BSD3 &
+   http://trac.haskell.org/haddock/report/1 & Many issues, mostly involving
+   output formats. Hoogle back-end quite broken, \LaTeX back-end needs tests and
+   probably also severely broken by now. Ask in the DPTs for help. A bit hard to
+   get your code upstream due to tight binding with GHC. Needs GHC HEAD to hack
+   on. \\
+   \hline
+   GHC & Haskell compiler & Haskell & GHC License &
+   https://ghc.haskell.org/trac/ghc/ \newline
+   https://ghc.haskell.org/trac/ghc/wiki/WorkingConventions \newline
+   http://www.haskell.org/ghc/license \newline
+   https://ghc.haskell.org/trac/ghc/wiki/Newcomers &
+   Don't be intimidated by the fact that it's a compiler. Haskell programs are
+   very self contained and it's quite easy to get started on something. Somewhat
+   tiresome to work with due to large tree and long validation process. Look for
+   getting started guides on the GHC wiki. Subscribe to GHC mailing lists. \\
+   \hline
+   Yon-chan & emacs 4chan browser & Emacs Lisp & GPLv3 &
+   https://github.com/davexunit/yon-chan & Very incomplete but would be very
+   useful for those of us who don't like leaving emacs. There should be few
+   commits going its way Soon\texttrademark. Ask in DPTs for help. \\
+   \hline
+   mentor & emacs interface to rtorrent & Emacs Lisp & GPLv3 &
+   https://github.com/skangas/mentor & Performance is absolute ass for many
+   torrents, locks up your whole emacs while fetching data. No local socket
+   support. \\
+   \hline
+   screenFetch & System information tool & Bash & GPLv3 &
+   https://github.com/KittyKatt/screenFetch & It's 3000 lines of Bash, shouldn't
+   really need a comment. In dire need of some test environment. Check the
+   issues. It's in Bash because close to every GNU/Linux machine will
+   have it installed. \\
+   \hline
+   guile-2d & 2D game library & Guile & LGPLv3 &
+   https://github.com/davexunit/guile-2d & Check TODO.org \\
+   \hline
+   hspec & Testing framework for Haskell, bit like RSpec for Ruby. & Haskell &
+   MIT & https://github.com/hspec/hspec/issues & Issue #103 would be nice.
+   Discuss with maintainer beforehand, he's a cool guy. \\
+   \hline
+   xmobar & Status bar & Haskell & BSD3 &
+   http://code.google.com/p/xmobar/issues/list & Sign up to mailing list. Could
+   always use more plugins. Source is hosted on GitHub where you can also find
+   more issues. \\
+   \hline
+   xmonad & Tiling WM & Haskell & BSD3 &
+   http://code.google.com/p/xmonad/issues/list & Also check out xmonad-contrib
+   \\
+   \hline
+   Hackage 2 & Haskell package repository & Haskell & BSD3 &
+   https://github.com/haskell/hackage-server/issues & Recently deployed.
+   Maintainers always look for some hands to write some code. Check out \#hackage
+   on Freenode. \\
+   \hline
+   Cabal & Haskell package installer & Haskell & BSD3 &
+   https://github.com/haskell/cabal & Issues range from summer projects to a day
+   of hacking. \\
+   \hline
+   ghc-android & Build scripts for compiling Haskell to Android & Haskell
+   patches and C & Same as GHC & https://github.com/neurocyte/ghc-android &
+   No one wants to write Java. \\
+   \hline
+   gemrb & Implementation of the Infinity Engine & C++ engine, Python scripting
+   & GPLv2 & https://github.com/gemrb/gemrb & An old but still active project.
+   Infinity Engine    is what Icewind Dale, Baldur's Gate and other such games
+   use. Guides to hacking in the repo. \\
+   \hline
+   attoparsec & Haskell library for parsing & Haskell & BSD3 &
+   https://github.com/bos/attoparsec/issues?state=open & Like Parsec but
+   sacrificing nice errors and some combinators for speed. Should be fairly easy
+   fixes for the most part. \\
+   \hline
+   mplayer-mode & emacs mode for mplayer control & Emacs Lisp & GPLv3 &
+   https://github.com/markhepburn/mplayer-mode & No open issues but is rather
+   featureless. Needs testing for compatibility with mplayer2 and emacs24. More
+   functions and customisable settings would be nice. \\
+   \hline
+   magit & emacs mode for git interaction & Emacs Lisp & GPLv3 &
+   https://github.com/magit/magit & If you're an emacs user and don't know what
+   magit is then I feel sorry for you. Mostly minor fixes and feature requests.
+   \\
+   \hline
+   colobot & FOSS version of an old educational game using C++-like language to
+   control robots & C++ & GPLv3 & https://github.com/colobot/colobot & Last time
+   I checked, it ran worse on my Core 2 Duo 1.8GHz than the original version on
+   my Pentium 233MHz. Check the open issues. \\
+   \hline
+   distributed-haskell & Cloud Haskell & Haskell & BSD3 &
+   https://github.com/haskell-distributed/distributed-process \newline
+   https://cloud-haskell.atlassian.net/secure/Dashboard.jspa &
+   Project split into multiple repositories, check the GitHub user \\
+   \hline
+   magit-gh-pulls & Extends magit to deal with GitHub pull requests & Emacs Lisp
+   & GPLv3(?) & https://github.com/sigma/magit-gh-pulls & Last time I checked it
+   was completely broken. Needs fixing. \\
+   \hline
+   yukari & Haskell library + executable for AnimeBytes automation & Haskell &
+   GPLv3 & https://github.com/Fuuzetsu/yukari & Still working on it, could use
+   some hands to help me though. Pretty horrible still. \\
+   \hline
+   torrentinfo & torrent file reading & Python & GPLv2 &
+   https://github.com/Fuuzetsu/torrentinfo & At this point just needs adding
+   features. Check open issues. Make sure to update docs and tests if hacking on
+   it. \\
+   \hline
+
+
+
+
+
+ \end{tabularx}
+\end{document}
